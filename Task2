@@ -1,1 +1,45 @@
-
+d=process.argv[2]
+m=process.argv[3]
+y=process.argv[4]
+ms=String(m)
+dn=Number(d)
+yn=Number(y)
+var flVys=((yn-1904)%4==0)
+m1=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря']
+var days=0
+if (ms==m1[0]||ms==m1[2]||ms==m1[4]||ms==m1[6]||ms==m1[7]||ms==m1[9]||ms==m1[11]){
+days=31-dn}
+else if(ms==m1[3]||ms==m1[5]||ms==m1[8]||ms==m1[10]){
+days=30-dn}
+else {days=28-dn}
+for (var i=0;i<m1.length;i++){
+if(ms==m1[i]){
+break}}
+switch(i){
+case 0: days=days+334
+break
+case 1:days=days+306
+break
+case 2:days=days+275
+break
+case 3:days=days+245
+break
+case 4:days=days+214
+break
+case 5:days=days+184
+break
+case 6:days=days+153
+break 
+case 7:days=days+122
+break
+case 8:days=days+92
+break
+case 9:days=days+61
+break
+case 10:days=days+31
+break
+case 11:days=days+0
+break}
+if ((ms==m1[0]||ms==m1[1])&&flVys){
+days=days+1}
+console.log('Дней до Нового Года ',days)
