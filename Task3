@@ -1,1 +1,8 @@
-
+e1=Number(process.argv[2])
+e2=Number(process.argv[3])
+e3=e1+e2
+var h= Math.floor(e3/3600)
+var m=Math.floor((e3-h*3600)/60) 
+var s=e3-h*3600-m*60 
+str=String(h)+" час " +String(m)+" минут "+String(s)+" секунд"
+console.log(str)
