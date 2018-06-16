@@ -1,1 +1,27 @@
-a=
+e=process.argv
+f='        '
+v=e.shift()
+v=e.shift()
+r=e.join(' ')
+r=r.toLowerCase()
+r1=r
+r1=r1.split(' ')
+var r2=""
+for (i=0; i<r1.length; i++){
+r2=r2+r1[i]}
+var r3=[]
+for (i=0; i<r2.length; i++){
+r3[i]=r2[i]}
+	r4=[]
+	for (i=0; i<r2.length; i++){
+	r4[i]=r3[i]}
+	r4=r4.reverse()
+	r4=r4.join('')
+console.log(f)
+console.log(f)
+console.log('r2=',r2, '     ',typeof r2)
+console.log(f)
+console.log('r4=',r4, '     ',typeof r4,'  ',)
+console.log(f)
+console.log('  ',r2==r4)
+console.log(f)
